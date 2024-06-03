@@ -7,6 +7,7 @@ export class BaseService<T, CreateDto, UpdateDto> {
     return this.prisma[this.model.name].create({ data });
   }
 
+
   async findAll(): Promise<T[]> {
     return this.prisma[this.model.name].findMany();
   }

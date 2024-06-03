@@ -10,6 +10,7 @@ export class ProductsService extends BaseService<
   Product,
   CreateProductDto,
   UpdateProductDto
+  
 > {
   constructor(private prismaService: PrismaService) {
     super(prismaService, { name: 'product' });

@@ -12,8 +12,8 @@ export class CreateProductDto {
   description?: string;
 
   @ApiProperty()
-  @IsNumber()
-  quantityInStock: number;
+  @IsNumber() 
+  quantityInStock:Number ;
 
   @ApiProperty()
   @IsNumber()
